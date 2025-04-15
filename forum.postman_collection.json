@@ -1,0 +1,43 @@
+{
+    "info": {
+      "name": "Forum API",
+      "_postman_id": "1d927f43-...-test",
+      "description": "Коллекция API-запросов для проекта форума",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Login",
+        "request": {
+          "method": "POST",
+          "header": [{"key": "Content-Type", "value": "application/x-www-form-urlencoded"}],
+          "body": {
+            "mode": "urlencoded",
+            "urlencoded": [
+              {"key": "username", "value": "demo", "type": "text"},
+              {"key": "password", "value": "123456", "type": "text"}
+            ]
+          },
+          "url": {
+            "raw": "http://localhost/forum/login.php",
+            "host": ["http://localhost"],
+            "path": ["forum", "login.php"]
+          }
+        }
+      },
+      {
+        "name": "Get Topic",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost/forum/topic.php?id=1",
+            "host": ["http://localhost"],
+            "path": ["forum", "topic.php"],
+            "query": [{"key": "id", "value": "1"}]
+          }
+        }
+      }
+    ]
+  }
+  
