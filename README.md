@@ -106,4 +106,4 @@ composer require --dev phpunit/phpunit
 
 ##  Автор
 
-Егорова Марина, К-821."
+Егорова Марина, К-821.
